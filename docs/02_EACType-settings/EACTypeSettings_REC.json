@@ -1,0 +1,46 @@
+{
+  "eacType": "REC",
+  "eacTypeName": "Renewable Energy Certificate",
+  "eacSubtypes": ["GO", "I-REC", "REC", "TIGR"],
+  
+  "amounts": {
+    "defaultUnit": "MWh",
+    "secondaryUnits": [
+      {
+        "unit": "kWh",
+        "unitFullName": "Kilowatt-hour",
+        "conversionFactor": 1000,
+        "conversionFactorUnits": "kWh/MWh",
+        "notes": "1 MWh = 1,000 kWh"
+      }
+    ]
+  },
+  
+  "emissionsData": null,
+  
+  "productionSource": {
+    "displayName": "Generator",
+    "technologyTypes": [
+      "Solar",
+      "Wind",
+      "Hydro",
+      "Geothermal",
+      "Biomass"
+    ],
+    "allowedLabels": [
+      "Green-e"
+    ],
+    "metadata": [
+      {
+        "key": "nameplateCapacity",
+        "label": "Nameplate Capacity (MW)",
+        "value": "string",
+        "type": "number",
+        "required": false,
+        "description": "Installed capacity of the generation facility"
+      }
+    ]
+  },
+  
+  "document": null
+}

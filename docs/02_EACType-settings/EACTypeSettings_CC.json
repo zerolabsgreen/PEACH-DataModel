@@ -1,0 +1,96 @@
+{
+  "eacType": "CC",
+  "eacTypeName": "Carbon Credit",
+  "eacSubtypes": [
+    "Carbon Credit",
+    "Carbon Removal",
+    "Carbon Capture & Storage"
+  ],
+  
+  "amounts": {
+    "defaultUnit": "tCO2e",
+    "secondaryUnits": [
+      {
+        "unit": "kgCO2e",
+        "unitFullName": "Kilogram CO2 equivalent",
+        "conversionFactor": 1000,
+        "conversionFactorUnits": "kgCO2e/tCO2e",
+        "notes": "1 tCO2e = 1,000 kgCO2e"
+      },
+      {
+        "unit": "MtCO2e",
+        "unitFullName": "Megatonne CO2 equivalent",
+        "conversionFactor": 0.000001,
+        "conversionFactorUnits": "MtCO2e/tCO2e",
+        "notes": "1 MtCO2e = 1,000,000 tCO2e"
+      }
+    ]
+  },
+  
+  "emissionsData": {
+    "defaultUnit": "tCO2e",
+    "secondaryUnits": []
+  },
+  
+  "productionSource": {
+    "displayName": "Project",
+    "technologyTypes": [
+      "Forestry",
+      "Renewable Energy",
+      "Methane Capture",
+      "Direct Air Capture",
+      "Enhanced Weathering",
+      "Biochar",
+      "Blue Carbon",
+      "Industrial Process Improvements"
+    ],
+    "allowedLabels": [
+      "Gold Standard",
+      "Verified Carbon Standard",
+      "American Carbon Registry",
+      "Climate Action Reserve",
+      "CORSIA",
+      "Plan Vivo"
+    ],
+    "metadata": [
+      {
+        "key": "vintage",
+        "label": "Vintage Year",
+        "type": "number",
+        "required": true,
+        "description": "Year the emission reduction occurred"
+      },
+      {
+        "key": "methodology",
+        "label": "Methodology",
+        "type": "string",
+        "required": true,
+        "description": "Carbon accounting methodology used (e.g., 'VM0042')"
+      },
+      {
+        "key": "projectId",
+        "label": "Project ID",
+        "type": "string",
+        "required": true,
+        "description": "Unique identifier in the registry"
+      },
+      {
+        "key": "durability",
+        "label": "Carbon Storage Durability",
+        "type": "enum",
+        "required": false,
+        "options": ["<100 years", "100-1000 years", ">1000 years"],
+        "description": "Expected storage duration for removal credits"
+      },
+      {
+        "key": "cobenefits",
+        "label": "Co-benefits",
+        "type": "string",
+        "required": false,
+        "description": "Additional environmental or social benefits (e.g., biodiversity, employment)"
+      }
+    ]
+  },
+  
+  "document": null
+}

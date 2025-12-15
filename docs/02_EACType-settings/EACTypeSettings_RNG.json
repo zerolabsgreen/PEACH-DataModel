@@ -1,0 +1,115 @@
+{
+  "eacType": "RNG",
+  "eacTypeName": "Renewable Natural Gas",
+  "eacSubtypes": ["Biomethane", "Renewable Diesel", "Green Ammonia"],
+  
+  "amounts": {
+    "defaultUnit": "MJ",
+    "secondaryUnits": [
+      {
+        "unit": "MMBtu",
+        "unitFullName": "Million British Thermal Units",
+        "conversionFactor": 0.000947817,
+        "conversionFactorUnits": "MMBtu/MJ",
+        "notes": "1 MMBtu = 1,055.06 MJ"
+      },
+      {
+        "unit": "MWh",
+        "unitFullName": "Megawatt-hour",
+        "conversionFactor": 0.000277778,
+        "conversionFactorUnits": "MWh/MJ",
+        "notes": "1 MWh = 3,600 MJ"
+      },
+      {
+        "unit": "Nm³",
+        "unitFullName": "Normal cubic meter",
+        "conversionFactor": 0.0263,
+        "conversionFactorUnits": "Nm³/MJ",
+        "notes": "Approximate conversion for biomethane (varies by composition)"
+      },
+      {
+        "unit": "Dth",
+        "unitFullName": "Dekatherm",
+        "conversionFactor": 0.00947817,
+        "conversionFactorUnits": "Dth/MJ",
+        "notes": "1 Dth = 1 MMBtu = 1,055.06 MJ"
+      }
+    ]
+  },
+  
+  "emissionsData": {
+    "defaultUnit": "gCO2e/MJ",
+    "secondaryUnits": [
+      {
+        "unit": "tCO2e/MMBtu",
+        "unitFullName": "Metric tonnes CO2e per Million BTU",
+        "conversionFactor": 0.0000531,
+        "conversionFactorUnits": "tCO2e/MMBtu per gCO2e/MJ",
+        "notes": "Used in some registries for lifecycle emissions reporting"
+      },
+      {
+        "unit": "kgCO2e/Nm³",
+        "unitFullName": "Kilograms CO2e per normal cubic meter",
+        "conversionFactor": 0.038,
+        "conversionFactorUnits": "kgCO2e/Nm³ per gCO2e/MJ",
+        "notes": "Approximate conversion for biomethane"
+      }
+    ]
+  },
+  
+  "productionSource": {
+    "displayName": "Facility",
+    "technologyTypes": [
+      "Agricultural Waste",
+      "Food Waste",
+      "Landfill Gas",
+      "Wastewater Treatment",
+      "Manure Digestion",
+      "Forestry Residues"
+    ],
+    "allowedLabels": [
+      "ISCC Certified",
+      "RSB",
+      "Green Gas Certification Scheme"
+    ],
+    "metadata": [
+      {
+        "key": "feedstock",
+        "label": "Feedstock Type",
+        "type": "string",
+        "required": true,
+        "description": "Source material (e.g., 'Agricultural Waste', 'Landfill Gas')"
+      },
+      {
+        "key": "productionPeriod",
+        "label": "Production Period",
+        "type": "string",
+        "required": true,
+        "description": "When the RNG was produced (e.g., '2024-Q2')"
+      },
+      {
+        "key": "carbonIntensity",
+        "label": "Carbon Intensity (gCO2e/MJ)",
+        "type": "number",
+        "required": true,
+        "description": "Lifecycle carbon intensity"
+      },
+      {
+        "key": "injectionPoint",
+        "label": "Grid Injection Point",
+        "type": "string",
+        "required": false,
+        "description": "Location where RNG was injected into gas grid"
+      },
+      {
+        "key": "methaneContent",
+        "label": "Methane Content (%)",
+        "type": "number",
+        "required": false,
+        "description": "Percentage of CH4 in the gas mixture"
+      }
+    ]
+  },
+  
+  "document": null
+}

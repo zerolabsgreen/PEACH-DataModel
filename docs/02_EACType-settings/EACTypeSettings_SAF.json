@@ -1,0 +1,100 @@
+{
+  "eacType": "SAF",
+  "eacTypeName": "Sustainable Aviation Fuel",
+  "eacSubtypes": ["SAF", "SAFc"],
+  
+  "amounts": {
+    "defaultUnit": "t",
+    "secondaryUnits": [
+      {
+        "unit": "kg",
+        "unitFullName": "Kilogram",
+        "conversionFactor": 1000,
+        "conversionFactorUnits": "kg/t",
+        "notes": "1 metric tonne = 1,000 kg"
+      },
+      {
+        "unit": "gal",
+        "unitFullName": "US Gallon",
+        "conversionFactor": 264.172,
+        "conversionFactorUnits": "gal/t",
+        "notes": "Approximate conversion based on SAF density (~0.8 kg/L)"
+      },
+      {
+        "unit": "MJ",
+        "unitFullName": "Megajoule",
+        "conversionFactor": 43000,
+        "conversionFactorUnits": "MJ/t",
+        "notes": "Approximate energy content of SAF"
+      }
+    ]
+  },
+  
+  "emissionsData": {
+    "defaultUnit": "gCO2e/MJ",
+    "secondaryUnits": [
+      {
+        "unit": "%",
+        "unitFullName": "Percentage Emissions Reduction",
+        "conversionFactor": null,
+        "notes": "Calculated relative to CORSIA baseline of 89 gCO2e/MJ for fossil jet fuel"
+      }
+    ]
+  },
+  
+  "productionSource": {
+    "displayName": "Production Facility",
+    "technologyTypes": [
+      "HEFA (Hydroprocessed Esters and Fatty Acids)",
+      "FT (Fischer-Tropsch)",
+      "ATJ (Alcohol-to-Jet)",
+      "Power-to-Liquid",
+      "HEFA+"
+    ],
+    "allowedLabels": [
+      "ISCC",
+      "RSB",
+      "CORSIA Certified",
+      "SCS Global Services"
+    ],
+    "metadata": [
+      {
+        "key": "feedstock",
+        "label": "Feedstock Type",
+        "type": "string",
+        "required": true,
+        "description": "Source material for SAF production"
+      },
+      {
+        "key": "productionYear",
+        "label": "Production Year",
+        "type": "number",
+        "required": true,
+        "description": "Year the SAF was produced"
+      },
+      {
+        "key": "carbonIntensity",
+        "label": "Carbon Intensity (gCO2e/MJ)",
+        "type": "number",
+        "required": true,
+        "description": "Lifecycle carbon intensity of the SAF"
+      },
+      {
+        "key": "emissionsReduction",
+        "label": "Emissions Reduction (%)",
+        "type": "number",
+        "required": true,
+        "description": "Percentage reduction vs CORSIA baseline (89 gCO2e/MJ)"
+      },
+      {
+        "key": "certificationScheme",
+        "label": "Certification Scheme",
+        "type": "string",
+        "required": true,
+        "description": "e.g., CORSIA, RSB, ISCC"
+      }
+    ]
+  },
+  
+  "document": null
+}
