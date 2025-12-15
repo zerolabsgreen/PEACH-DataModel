@@ -2,7 +2,8 @@
 
 **Protocol for Environmental Attribute Certificate Harmonization**
 
-An open-source, universal data model for Environmental Attribute Certificates (EACs) that brings order to the complexity of sustainability claims across renewable energy, low-carbon fuels, and carbon credits.
+An open-source, universal data model for Environmental Attribute Certificates (EACs) that brings order to the complexity of sustainability claims across renewable energy, low-carbon fuels, carbon credits and more.
+PEACH has an open-source companion Demo App here: https://github.com/zerolabsgreen/PEACH-DemoApp 
 
 ![Alt text](https://miro.medium.com/v2/resize:fit:3840/format:webp/1*5MypRNSPgdUI9h09nbvL7w.jpeg)
 
