@@ -121,9 +121,9 @@ When you request a certificate from PEACH, you get **everything in one response*
 PEACH supports diverse environmental attribute types, organized into major categories. The data model currently implements select examples from each category, with research ongoing for full coverage:
 
 - **⚡️ Energy Certificates**
- - **REC** (Renewable Energy Certificate) → Electricity from renewable sources
- - **RTC** (Renewable Thermal Certificate) → Heat/cooling from renewable sources
- - LDES Long-duration energy storage certificates _(future)_
+  - **REC** (Renewable Energy Certificate) → Electricity from renewable sources
+  - **RTC** (Renewable Thermal Certificate) → Heat/cooling from renewable sources
+  - LDES Long-duration energy storage certificates _(future)_
 
 - **🌱 Carbon & Climate**
 	- **CC** (Carbon Credit) → Emission reductions or removal from projects
@@ -131,17 +131,17 @@ PEACH supports diverse environmental attribute types, organized into major categ
    - CBAM Carbon Border Adjustment Mechanism _(future)_
 
 - **⛽️ Liquid Fuels**
- - **RNG** (Renewable Natural Gas) → Biomethane and other biogas derivatives
- - **SAF** (Sustainable Aviation Fuel) → Renewable jet fuel
- - SMF (Sustainable Marine Fuel) _(future)_
- - Green Hydrogen, _(future)_ 
- - Green Ammonia _(future)_
+  - **RNG** (Renewable Natural Gas) → Biomethane and other biogas derivatives
+  - **SAF** (Sustainable Aviation Fuel) → Renewable jet fuel
+  - SMF (Sustainable Marine Fuel) _(future)_
+  - Green Hydrogen, _(future)_ 
+  - Green Ammonia _(future)_
 
 - **🏭 Green-X (Industrial Products)** </br>
-Green Steel, Green Aluminum, Green Cement _(future research)_
+  - Green Steel, Green Aluminum, Green Cement _(future research)_
 
 - **♻️ Circularity Certificates** </br>
-Recycled materials: paper, water, plastic _(future research)_
+  - Recycled materials: paper, water, plastic _(future research)_
 
 **Example: Currently Implemented Types**
 
