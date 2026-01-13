@@ -15,6 +15,7 @@ PEACH has an open-source companion Demo App here: https://github.com/zerolabsgre
 - [Core Design Philosophy](#-core-design-philosophy)
 - [Key Concepts](#key-concepts)
 - [Documentation](#documentation)
+- [Spreadsheet Reference](#-spreadsheet-reference)
 - [For Sustainability Professionals](#for-sustainability-professionals)
 - [License](#license)
 
@@ -81,6 +82,22 @@ RECs track electricity that can't be stored. RNG tracks physical fuel with compl
 
 - 💡 **Quality and traceability are built in** </br>
 PEACH captures who issued the certificate, what organizations were involved, what documents support each event, and whether the claim is bundled or unbundled. It even tracks the [`ExternalIDs`](/docs/01_entities/ExternalID_doc.md) used by the EAC source registry or issuer to represent these entities (events, documents, organizations). This transparency helps you assess quality and meet reporting requirements.
+
+#### 📊 Non-Technical Reference: PEACH Spreadsheet
+
+For sustainability professionals who prefer working with spreadsheets over code, we provide a comprehensive spreadsheet version of the PEACH data model:
+
+- **[Google Sheets Version](https://docs.google.com/spreadsheets/d/1FolQUO2MfT4_zDQpb8mjK3BPJyc5ne6l/edit?usp=sharing&ouid=109057906477034480188&rtpof=true&sd=true)** (view/comment access)
+- **[Excel Download](docs/PEACH_DataModel_20260114.xlsx)** (local file)
+
+The spreadsheet includes:
+- Overview tab explaining PEACH concepts and entity relationships
+- Dedicated tabs for each entity (EACertificate, EACEvent, ProductionSource, etc.)
+- Real-world examples for REC, RNG, and SAF certificate types
+- Complete reference of all valid enumerated values (event types, organization roles, etc.)
+- Field definitions with descriptions in plain language
+
+This is an excellent starting point for understanding PEACH before diving into the technical TypeScript documentation.
 
 ### Implementation Architecture Principles
 
@@ -324,6 +341,16 @@ See [OrganizationRole documentation](docs/01_entities/Organization_doc.md) for a
 
 PEACH documentation is organized to help you find what you need quickly.
 
+### 📊 Spreadsheet Reference
+
+For a non-technical overview of the entire data model in spreadsheet format:
+
+- **[PEACH Data Model Spreadsheet (Google Sheets)](https://docs.google.com/spreadsheets/d/1FolQUO2MfT4_zDQpb8mjK3BPJyc5ne6l/edit?usp=sharing&ouid=109057906477034480188&rtpof=true&sd=true)**
+- **[Download Excel (.xlsx)](docs/PEACH_DataModel_20260114.xlsx)**
+
+The spreadsheet provides field-by-field documentation with examples for REC, RNG, and SAF certificates, designed for sustainability professionals without technical backgrounds.
+
+</br>
 ### 📁 Core Entities ([docs/01_entities/](docs/01_entities/))
 
 The building blocks of PEACH certificates. Each document includes TypeScript interfaces, JSON examples, business rules, and design rationale.
@@ -425,6 +452,7 @@ Repository: https://github.com/zerolabs/PEACH-DataModel
 - ✅ You can use PEACH in commercial products
 - ✅ You can modify PEACH for your needs
 - ⚠️ Any modifications to PEACH files must be shared under the same license
+- 📝 You must preserve copyright notices and attribute the original source
 - ℹ️ You can combine PEACH with proprietary code
 
 For questions about licensing, please open an issue in this repository.
