@@ -88,7 +88,7 @@ PEACH captures who issued the certificate, what organizations were involved, wha
 For sustainability professionals who prefer working with spreadsheets over code, we provide a comprehensive spreadsheet version of the PEACH data model:
 
 - **[Google Sheets Version](https://docs.google.com/spreadsheets/d/1FolQUO2MfT4_zDQpb8mjK3BPJyc5ne6l/edit?usp=sharing&ouid=109057906477034480188&rtpof=true&sd=true)** (view/comment access)
-- **[Excel Download](docs/PEACH_DataModel_20260114.xlsx)** (local file)
+- **[Excel Download](docs/PEACH_DataModel.xlsx)** (local file)
 
 The spreadsheet includes:
 - Overview tab explaining PEACH concepts and entity relationships
@@ -346,7 +346,7 @@ PEACH documentation is organized to help you find what you need quickly.
 For a non-technical overview of the entire data model in spreadsheet format:
 
 - **[PEACH Data Model Spreadsheet (Google Sheets)](https://docs.google.com/spreadsheets/d/1FolQUO2MfT4_zDQpb8mjK3BPJyc5ne6l/edit?usp=sharing&ouid=109057906477034480188&rtpof=true&sd=true)**
-- **[Download Excel (.xlsx)](docs/PEACH_DataModel_20260114.xlsx)**
+- **[Download Excel (.xlsx)](docs/PEACH_DataModel.xlsx)**
 
 The spreadsheet provides field-by-field documentation with examples for REC, RNG, and SAF certificates, designed for sustainability professionals without technical backgrounds.
 
