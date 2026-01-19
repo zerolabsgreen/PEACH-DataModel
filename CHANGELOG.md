@@ -16,6 +16,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Documentation updated in README.md with links to both formats
 
 ### Changed
+- **[BREAKING]** Updated `ProductionSource` field requirements
+  - Made `ProductionSource.name` required (was optional)
+  - Made `ProductionSource.technology` optional (was required)
+  - Migration: 
+    - Ensure all ProductionSource objects include a `name` field
+    - `technology` field is now optional and may be omitted if not available
+  - Rationale: Production source must have an identifier name; technology info may be captured at certificate level via `productionTech` instead
+  - Files changed:
+    - `src/entities/ProductionSource.ts`
+    - `docs/01_entities/ProductionSource_doc.md`
+    - `docs/PEACH_DataModel_20260114.xlsx`
+
 - **[BREAKING]** Renamed & changed type `EACertificate.productionSource` to `EACertificate.productionSourceId: string` 
   - Rationale: we don't store the ProductionSource object in the EACertificate but only its normalized id
   - Migration: `EACertificate.productionSourceId` should point to `ProductionSource.id`

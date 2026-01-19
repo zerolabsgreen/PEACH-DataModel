@@ -12,12 +12,12 @@ interface ProductionSource {
   externalIDs?: ExternalID[];
   eacTypes: EACType[];
   
-  name?: string;
+  name: string;
   description?: string;
   location?: Location;
   organizations?: OrganizationRole[];
   
-  technology: string[];
+  technology?: string[];
   operationStartDate?: string;  // ISO 8601 date YYYY-MM-DD
   labels?: string[];
   
@@ -67,11 +67,11 @@ interface ProductionSource {
 | `id` | string | ✅ | unique identifier | | "ps-001" | |
 | `externalIDs` | ExternalID[] | | external registry identifiers | | | generator IDs, facility codes |
 | `eacTypes` | EACType[] | ✅ | certificate types this source produces | min 1 item | ["REC"] | some facilities produce multiple types |
-| `name` | string | | facility or project name | | "Sunshine Valley Solar" | |
+| `name` | string | ✅ | facility or project name | | "Sunshine Valley Solar" | |
 | `description` | string | | facility description | | | |
 | `location` | Location |  | facility location | | | see [Location](./Location.md) |
 | `organizations` | OrganizationRole[] | | key organizations | | | owner, operator |
-| `technology` | string[] | ✅ | technology or feedstock types | min 1 item | ["Solar PV"] | valid values in EACTypeSettings |
+| `technology` | string[] | | technology or feedstock types | | ["Solar PV"] | valid values in EACTypeSettings |
 | `operationStartDate` | string | | when facility became operational | ISO 8601 date | "2019-03-15" | critical for eligibility |
 | `labels` | string[] | | certifications and labels | | ["Green-e Certified"] | |
 | `documentIds` | string[] | | references to related documents | valid Document.docId | ["doc-facility-001"] | facility certifications |
@@ -81,7 +81,7 @@ interface ProductionSource {
 ## Business Rules
 
 **BR-1: Technology array**
-Always use `string[]` even for single technology. Valid values are defined in EACTypeSettings per certificate type.
+When present, `technology` should use `string[]` even for single technology. Valid values are defined in EACTypeSettings per certificate type. This field is optional as technology information may not always be available or may be captured at the certificate level via `productionTech`.
 
 **BR-2: Date serialization**
 `operationStartDate` serializes as ISO 8601 date string (YYYY-MM-DD) in JSON.
