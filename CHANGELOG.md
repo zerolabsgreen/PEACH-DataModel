@@ -5,15 +5,7 @@ All notable changes to the PEACH Protocol will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-
-### Added
-- Spreadsheet reference for non-technical users
-  - Excel file: `docs/PEACH_DataModel_20260114.xlsx` (13 tabs covering all entities)
-  - Google Sheets version with view/comment access
-  - Features field-by-field documentation with real-world examples for REC, RNG, and SAF certificate types
-  - Designed for sustainability professionals without TypeScript/technical backgrounds
-  - Documentation updated in README.md with links to both formats
+## [0.1.1] - 2026-01-19
 
 ### Changed
 - **[BREAKING]** Updated `ProductionSource` field requirements
@@ -35,6 +27,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **[BREAKING]** changed type `EACertificate.documents: [Document]` to `EACertificate.documents: string[]`
   - Rationale: we don't store the Document object in the EACertificate but only it's id 
 
+
+## [Unreleased] - 2026-01-14
+
+### Added
+- Spreadsheet reference for non-technical users
+  - Excel file: `docs/PEACH_DataModel_20260114.xlsx` (13 tabs covering all entities)
+  - Google Sheets version with view/comment access
+  - Features field-by-field documentation with real-world examples for REC, RNG, and SAF certificate types
+  - Designed for sustainability professionals without TypeScript/technical backgrounds
+  - Documentation updated in README.md with links to both formats
 
 ---
 
